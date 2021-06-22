@@ -1,9 +1,11 @@
 package com.example.simpletodofinal;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,9 +24,15 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
         void onItemClicked(int position);
     }
 
+
     List<String> items;
     OnLongClickListener longClickListener;
     OnClickListener clickListener;
+
+    public ItemsAdapter(List<String> items) {
+        this.items = items;
+
+    }
 
     public ItemsAdapter(List<String> items, OnLongClickListener longClickListener, OnClickListener clickListener) {
         this.items = items;
@@ -84,6 +92,9 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder>{
                     return true;
                 }
             });
+
+
+
         }
     }
 }

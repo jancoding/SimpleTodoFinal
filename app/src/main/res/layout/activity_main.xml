@@ -8,25 +8,28 @@
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="match_parent"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="86dp"
         android:layout_toEndOf="@+id/newTodo"
         android:layout_toRightOf="@+id/newTodo"
         android:text="Add" />
 
     <EditText
         android:id="@+id/newTodo"
-        android:layout_width="wrap_content"
+        android:layout_width="199dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="90dp"
         android:ems="10"
         android:hint="Add a new item here!"
         android:inputType="textPersonName" />
@@ -34,9 +37,37 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItems"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="630dp"
         android:layout_above="@+id/newTodo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_centerVertical="false"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-4dp"
+        android:text="Clear " />
+
+    <Button
+        android:id="@+id/btnRemoved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="37dp"
+        android:text="View Removed Items" />
+
 
 </RelativeLayout>
