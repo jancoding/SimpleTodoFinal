@@ -20,7 +20,8 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] Clear Todo List
+* [X] View Removed or Completed Items (Persisted)
 
 ## Video Walkthrough
 
@@ -34,9 +35,11 @@ GIF created with [Kap](https://getkap.co/).
 
 Describe any challenges encountered while building the app.
 
+I was able to build the app smoothly through the required and stretch goals. I faced some errors when attempting my own additional features with clearing the RecyclerView without the app crashing, and persisting the removed/completed items on a different file than the original items.
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2021] [name of copyright owner]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
