@@ -39,7 +39,7 @@ I was able to build the app smoothly through the required and stretch goals. I f
 
 ## License
 
-    Copyright [2021] [name of copyright owner]
+    Copyright 2021 
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
